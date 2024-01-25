@@ -1,0 +1,217 @@
+@charset "utf-8";/*编译方法为utf-8*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: rgba(23, 169, 218, 1);
+    text-decoration: none;/*清楚样式*/
+}
+
+a:hover {
+    color: pink;
+}
+
+button {
+    /* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+    cursor: pointer
+}
+
+body {
+    display: flex;/*flex模型*/
+    flex-direction: column;/*改变排列方式，column为垂直*/
+    justify-content: center;/*主轴对齐*/
+    align-items: center;/*侧轴对齐*/
+    width: 100vw;/*vw单位为视口宽度的1/100之一*/
+    height: 100vh;/*vh单位为视口高度的1/100之一*/
+    background-image: url(./image/1.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;/*元素水平对齐*/
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: none;/*img的可视效果*/
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;/*盒子圆角效果*/
+}
+
+.box .one-box .one {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.box .two-box .two {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.box .one-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 600px;
+    height: 360px;
+    margin-right: 1px;
+    border-right: 1px solid black;
+    left: 150px;
+    top: -30px;
+}
+
+.box .one-box > p {
+    font-style: 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.box .two-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 450px;
+    height: 450px;
+    left: 220px;
+    top: -30px;
+    margin-right: 1px;
+}
+
+.box .two-box .input-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+.box .two-box .input-box > label {
+    margin-bottom: 5px;
+    color: black;
+    font-style: 13px;
+}
+
+.box .two-box .input-box > input {
+    color: white;
+    font-style: 14px;
+    height: 35px;
+    width: 250px;
+    background: pink;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    transition: 0.2s;/*过度效果*/
+    outline: none;/**/
+    padding: 0 10px;
+    letter-spacing: 1px;/**/
+}
+
+.box .two-box .input-box > input:focus {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    /*focus*/
+}
+
+.box .two-box .btn-box {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.box .two-box .btn-box > a {
+    font-style: 14px;
+    text-decoration: none;
+    color: palegreen;
+    transition: 0.2s;
+    width: 250px;
+    text-align: end;
+}
+
+.box .two-box .btn-box > a:hover {
+    color: pink;
+}
+
+.box .two-box .btn-box > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.box .two-box .btn-box > div > button {
+    position: relative;
+    width: 120px;
+    height: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: white;
+    color: black;
+    border-radius: 5px;
+    transition: 0.2s;
+    margin: 5px;
+    left: -5px;
+}
+
+.box .two-box .btn-box > div > button:hover {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(197, 81, 58, 0.5);
+}
+
+.box .two-box .btn-box > div > button:nth-child(2) {
+    width: 120px;
+    background: rgba(23, 169, 218, 1);
+    color: white;
+}
+
+.box .two-box .btn-box > div > button:nth-child(2):hover {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: rgba(197, 81, 58, 0.5);
+}
+
+.box .two-box .other-box > p {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.box .two-box .other-box .other-login {
+    font-style: 20px;
+    margin-bottom: -20px;
+    margin-top: 5px;
+}
+.box .three-box {
+    position: relative;
+    bottom: -210px;
+    left: -180px;
+    font-size: small;
+    text-align: center;
+}
+
+.box .four-box {
+    position: relative;
+    bottom: -185px;
+    left: -708px;
+}
+
+.box .fif-box {
+    position: relative;
+    bottom: -180px;
+    left: 0px;
+}
+
+
